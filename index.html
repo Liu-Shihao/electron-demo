@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>OpenAI Quickstart</title>
+  <link
+    rel="shortcut icon"
+    href="static/dog.png"
+  />
+  <link rel="stylesheet" href="static/main.css" />
+</head>
+
+<body>
+  <img src="static/dog.png" class="icon" />
+  <h3>What do you want to ask? </h3>
+  <form action="http://127.0.0.1:3000" method="post">
+    <input type="text" name="question" placeholder="Enter Your Question" required />
+    <input type="submit" value="Generate" />
+  </form>
+
+  <div class="result">{{ result }}</div>
+
+</body>
